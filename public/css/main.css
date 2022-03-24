@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=M+PLUS+Code+Latin&family=Montserrat:wght@200;400;500;600&family=Poppins:wght@200;600&display=swap');
+
+body,html{
+    height: 100%;
+    margin: 0;
+    transition: 0.4s;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2e2e30;
+}
+
+body .bg1{
+    -webkit-clip-path: polygon(23% 46%, 0 65%, 56% 84%);
+    clip-path: polygon(23% 46%, 0 65%, 56% 84%);
+    background-color:#2296bc;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+body .bg2{
+    -webkit-clip-path: polygon(73% 63%, 90% 94%, 100% 81%);
+    clip-path: polygon(73% 63%, 90% 94%, 100% 81%);
+    background-color:#2296bc;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+body .bg3{
+    -webkit-clip-path: polygon(78% 0, 56% 23%, 68% 49%);
+    clip-path: polygon(78% 0, 56% 23%, 68% 49%);
+    background-color:#2296bc;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: auto;
+    height: 100%;
+    width: 100%;
+}
+
+body .Form{
+    background-color: #3e3f41;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  1px 1px #2e2e30;
+}
+
+body .Form .claseFormulario{
+    width: 100%;
+}
+
+
+body .Form h1{
+    color: #ffe;
+    font-size: 3em;
+    padding: 0;
+    margin:0; 
+}
+
+body .Form h2{
+    color: #ffe;
+    font-size: 1em;
+    padding: 0;
+}
+
+body .Form label{
+    color: #ffe;
+}
+
+body .Form input{
+    border:none;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-start: 3px;
+    background-color: #3e3f41;
+    margin-block-end: 10px;
+}
+
+body .Form input[type="radio"]{ 
+    border: none;
+    color: #2296bc; 
+}
+
+body .Form input[type="text"]{
+    display: block;
+    border-bottom: 1px solid #2296bc;
+    width: 300px;
+    color: #ffe;
+    font-size: 1.1em;
+}
+
+body .Form button{
+    border: none;
+    background-color: #2296bc;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
+    padding-block-end: 10px;
+    padding-block-start: 10px;
+    color: #ffe;
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-block-start: 25px;
+}
+
+body .Form button:hover{
+    background-color: #1f86a8;
+}
+
+body .Form .claseBoton{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+
+body .Table{
+    height: 100%;
+    font-size: 1.3em;
+    overflow: auto;
+    position: relative;
+}
+
+body .Table table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+body .Table table tr{
+    text-align: center;
+    background-color: #3e3f41;
+    border: none;
+    color: #ffe;
+    margin: 0;
+    transition: 0.5s;  
+}
+
+body .Table table th{
+    text-align: center;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
+    padding-block-end: 10px;
+    padding-block-start: 10px;
+    background-color: #353538;
+    border-bottom: 3px solid #2296bc;
+    color: #ffe;
+    margin: 0; 
+}
+
+
+body .Table table td{
+    text-align: center;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
+    padding-block-end: 10px;
+    padding-block-start: 10px;
+    background-color: #3e3f41;
+    border-top: 1px solid #3895b4;
+    color: #ffe;
+    margin: 0;  
+}
+
+body .deleteButton{
+    margin: 0;
+    background-color: #2296bc;
+    border: none; 
+    color: #ffe;
+    font-size: 0.9em;
+    padding-inline-end: 7px;
+    padding-inline-start: 7px;
+    padding-block-start: 7px;
+    padding-block-end: 7px;
+    cursor: pointer;
+    transition: 0.5s; 
+}
+
+.deleteButton:hover{
+    background-color: #1f86a8;
+}

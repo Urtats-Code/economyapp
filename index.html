@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gestion Econimia</title>
+        <link rel="stylesheet" href="./public/css/main.css">
+    </head>
+    <body>
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+        <div class="bg3 "></div>
+        <main>
+            <div class="Form">
+                <h1> My Economy </h1>
+                <form action="" id="transactionForm">
+                    <h2> Transaction Type </h2>
+                    <div class="claseFormulario">
+                        <label for="ingreso"> Entry </label>
+                        <input type="radio" name="transactionType" id="egreso" value="Entry" checked>
+                        <label for="egreso"> Egress </label>
+                        <input type="radio" name="transactionType" id="inreso" value="Egress">
+                    </div>
+                    <div class="claseFormulario">
+                        <label for="transactionDescription">
+                            <span>Description</span>
+                        </label>
+                        <input required type="text" name="transactionDescription" id="transactionDescription">
+                    </div>
+                    <div class="claseFormulario">
+                        <label for="transactionAmount">
+                            <span>Amount/Cuantity</span>
+                        </label>
+                        <input required type="text" name="transactionAmount" id="transactionAmount">
+                    </div>
+                    <div class="claseFormulario">
+                        <label for="transactionCategory">
+                            <span>Category</span>
+                        </label>
+                        <input required type="text" name="transactionCategory" id="transactionCategory">
+                    </div>
+                
+                    <div class="claseFormulario claseBoton">
+                        <button id="botonDeEnvio"> Add Element </button>
+                    </div>
+                
+                </form>
+            </div>
+        
+            <div class="Table">
+                <table id="transactionTable">
+                    <tr>
+                        <th> Type </th>
+                        <th> Description </th>
+                        <th> Amount/Cuantity </th>
+                        <th> Category </th>
+                        <th> Delete </th>
+                    </tr>
+                </table>
+            </div>    
+        </main>
+        <script src="./public/js/main.js">
+        </script>
+    </body>
+
+</html>
